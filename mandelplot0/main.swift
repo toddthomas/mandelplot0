@@ -52,14 +52,14 @@ extension Int: Lengthy {}
 extension Double: Lengthy {}
 
 extension Lengthy {
-    var twoOrLess: Bool {
+    var lengthTwoOrLess: Bool {
         length <= 2
     }
 }
 
 extension IteratedFuncValues where Number: Lengthy {
     var bounded: Bool {
-        allSatisfy(\.twoOrLess)
+        allSatisfy(\.lengthTwoOrLess)
     }
 }
 
