@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2EAFD10024B0487E00A9A33E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD0FF24B0487E00A9A33E /* main.swift */; };
+		2EAFD10824B048C800A9A33E /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 2EAFD10724B048C800A9A33E /* ComplexModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAFD10824B048C800A9A33E /* ComplexModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = mandelplot0;
+			packageProductDependencies = (
+				2EAFD10724B048C800A9A33E /* ComplexModule */,
+			);
 			productName = mandelplot0;
 			productReference = 2EAFD0FC24B0487E00A9A33E /* mandelplot0 */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 2EAFD0F324B0487E00A9A33E;
+			packageReferences = (
+				2EAFD10624B048C800A9A33E /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = 2EAFD0FD24B0487E00A9A33E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EAFD10624B048C800A9A33E /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EAFD10724B048C800A9A33E /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EAFD10624B048C800A9A33E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EAFD0F424B0487E00A9A33E /* Project object */;
 }
